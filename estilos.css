@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;1,300;1,900&display=swap');
+
+body {
+    font-family: 'Roboto', 'sans-serif';
+    background-color: #e1e1e1;
+    height: 100%;
+
+}
+
+main {
+    max-width: 1000px;
+    margin: auto;
+    padding: 10px;
+    border: 1px solid #e1e1e1;
+    min-height: 105vh;
+    height: 100%;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+aside {
+    float: left;
+    width: 25%;
+    padding: 10px;
+    height: 100%;
+    border-radius: 10px;
+    background-color: rgb(154, 196, 221);
+}
+
+aside h1 {
+    margin-bottom: 0;
+}
+
+aside h2 {
+    margin-top: 40px;
+}
+
+aside img.profile {
+    height: 150px;
+    width: 150px;
+    border-radius: 60%;
+    border: 5px solid #ffffff;
+    object-fit: cover;
+    display: block;
+    margin: auto;
+}
+
+.data h4 {
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+.data span {
+    font-size: 90%;
+}
+
+section {
+    float: right;
+    width: 70%;
+    margin-top: 10px;
+}
+
+section article {
+    margin-bottom: 50px;
+}
+
+.formMessage {
+    background-color: #e1e1e1;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.formMessage input,
+.formMessage textarea {
+    border-radius: 10px;
+    border: 0;
+    padding: 5px;
+    width: 95%;
+}
+
+h2.title {
+    margin: 20px 0;
+}
+
+.formMessage input[type="submit"] {
+    padding: 10px;
+    font-weight: bold;
+    width: 100%;
+    background-color: rgb(81, 85, 85);
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.formMessage input[type="submit"]:hover {
+    opacity: .9;
+}
+
+.table-education {
+    border: 1px solid #e1e1e1;
+    border-collapse: collapse;
+}
+
+.table-education tr {
+    border-bottom: 1px solid #e1e1e1;
+    padding: 10px;
+}
+
+.table-education th,
+.table-education td {
+    text-align: start;
+    border-right: 1px solid #e1e1e1;
+    padding: 5px;
+}
