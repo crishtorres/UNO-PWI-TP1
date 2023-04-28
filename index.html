@@ -45,18 +45,18 @@
                 <h3>Contáctame</h3>
                 <form action="" class="formMessage">
                     <label for="name">Nombre:</label><br />
-                    <input type="text" name="name" id="name"><br /><br />
+                    <input type="text" name="name" id="name" required><br /><br />
 
 
                     <label for="mail">Email:</label><br />
-                    <input type="email" name="mail" id="mail"
-                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"><br /><br />
+                    <input type="email" name="mail" id="mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                        required><br /><br />
 
                     <label for="phone">Teléfono:</label><br />
                     <input type="tel" name="phone" id="phone"><br /><br />
 
                     <label for="message">Mensaje:</label><br />
-                    <textarea name="message" rows="5" id="message"></textarea><br /><br />
+                    <textarea name="message" rows="5" id="message" required></textarea><br /><br />
 
                     <input type="submit" value="Enviar mensaje">
                 </form>

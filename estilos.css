@@ -82,6 +82,7 @@ section article {
 
 h2.title {
     margin: 20px 0;
+    color: #3882af
 }
 
 .formMessage input[type="submit"] {
