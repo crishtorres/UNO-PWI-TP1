@@ -4,7 +4,6 @@ body {
     font-family: 'Roboto', 'sans-serif';
     background-color: #e1e1e1;
     height: 100%;
-
 }
 
 main {
@@ -12,7 +11,7 @@ main {
     margin: auto;
     padding: 10px;
     border: 1px solid #e1e1e1;
-    min-height: 105vh;
+    min-height: 95vh;
     height: 100%;
     background-color: #ffffff;
     border-radius: 10px;
@@ -46,8 +45,7 @@ aside img.profile {
 }
 
 .data h4 {
-    margin-bottom: 0;
-    margin-top: 10px;
+    margin: 10px 0 0 0;
 }
 
 .data span {
