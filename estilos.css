@@ -48,7 +48,7 @@ aside img.profile {
     margin-bottom: 50px;
 }
 
-.data h4 {
+.data h3 {
     margin: 10px 0 0 0;
 }
 
@@ -56,14 +56,14 @@ aside img.profile {
     font-size: 90%;
 }
 
-section {
+#main-section {
     float: right;
     width: 70%;
     margin-top: 10px;
 }
 
-section article {
-    margin-bottom: 50px;
+#main-section article {
+    margin-bottom: 40px;
 }
 
 .formMessage {
@@ -113,4 +113,8 @@ h2.title {
     text-align: start;
     border-right: 1px solid #e1e1e1;
     padding: 5px;
+}
+
+.work-detail {
+    margin-bottom: 40px;
 }
