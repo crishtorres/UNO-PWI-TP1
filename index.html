@@ -11,139 +11,209 @@
 
     <title>Curriculum Vitae - Cristian Torres</title>
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
     <link href="./estilos.css" rel="stylesheet">
 </head>
 
 <body>
-    <main>
+    <main class="container d-flex flex-column p-3 rounded">
+        <div class="d-flex gap-3">
+            <aside class="p-3 rounded">
+                <img alt="imagen perfil cristian torres" class="profile rounded-circle m-auto d-block"
+                    src="./images/perfil.png" />
 
-        <aside>
-            <img alt="imagen perfil cristian torres" class="profile" src="./images/perfil.png" />
-            <div id="main-title-container">
-                <h1>Cristian Torres</h1>
-                <span><em>Desarrollador de software</em></span>
+                <div id="main-title-container" class="mb-4">
+                    <h1 class="mb-0">Cristian Torres</h1>
+                    <span><span class="italic">Desarrollador de software</span></span>
+                </div>
+
+                <article class="data mb-3">
+                    <h5 class="m-0">Teléfono</h5>
+                    <span class="">011 22342352</span>
+                </article>
+
+                <article class="data mb-3">
+                    <h5 class="m-0">Mail</h5>
+                    <span><a href="mailto:cristian.torres.9035@gmail.com">cristian.torres.9035@gmail.com</a></span>
+                </article>
+
+                <article class="data mb-3">
+                    <h5 class="m-0">LinkedIn</h5>
+                    <span>
+                        <a target="_blank" href="https://www.linkedin.com/in/cristian-hernan-torres-84630b182/">Link</a>
+                    </span>
+                </article>
+
+                <article>
+                    <h5>Contáctame</h5>
+                    <form action="" class="formMessage rounded border-0 p-4">
+
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nombre: </label>
+                            <input type="text" name="name" class="form-control" id="name" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email: </label>
+                            <input type="email" name="email" class="form-control" id="email" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Teléfono: </label>
+                            <input type="tel" name="phone" class="form-control" id="phone" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="amount" class="form-label">Sueldo minimo (AR$): </label>
+                            <input type="number" name="amount" class="form-control" id="amount" required>
+                        </div>
+
+                        <div id="quotationContainer"
+                            class="d-flex align-items-center justify-content-around mb-3 flex-wrap rounded p-2 text-white">
+                            <div class="d-flex align-items-center gap-1">
+                                <span>U$D :</span>
+                                <span id="currency-amount-usd">0.000</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-1">
+                                <span>EUROS :</span>
+                                <span id="currency-amount-eur">0.000</span>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Mensaje: </label>
+                            <textarea class="form-control" name="message" id="message" rows="5" required></textarea>
+                        </div>
+
+                        <div class="my-2" id="statusMessage"></div>
+
+                        <input role="button" type="submit" class="p-2 w-100 rounded  text-white" value="Enviar mensaje">
+                    </form>
+                </article>
+            </aside>
+
+            <section id="main-section" class="mt-1">
+                <article class="mb-5">
+                    <h2 class="title my-3">- Sobre mí</h2>
+                    <p>Soy una persona proactiva, con gran capacidad de trabajo en equipo, apasionado por
+                        la informática y por lo que hago. En constante aprendizaje, pendiente de las tendencias del
+                        ámbito. Me gustan los desafíos y afrontar problemas, buscando siempre la satisfacción del
+                        cliente. Busco aprender cada día para poder desarrollarme profesionalmente.
+                    </p>
+
+                </article>
+
+                <article class="mb-5">
+                    <h2 class="title  my-3">- Experiencia laboral</h2>
+
+                    <section class="work-detail">
+                        <span><span class="italic">(2016 - actualidad)</span> Alfa Net Plus - Soluciones informáticas -
+                            Líder de
+                            proyecto</span>
+                        <p>Me desempeño desarrollando/dirigiendo nuevos proyectos para clientes en un sistema ERP
+                            con más de 20 años en el mercado. También me encargo de la implementación de nuevas
+                            tecnologías.</p>
+
+                        <ul>
+                            <li>Python, React, React Native, PHP, SQL</li>
+                            <li>Análisis, coordinación y desarrollo de aplicaciones web, API, PWA, aplicaciones móviles,
+                                etc.
+                            </li>
+                            <li>Coordinación, desarrollo de nuevos productos.</li>
+                        </ul>
+                    </section>
+
+                    <section class="work-detail">
+                        <span><span class="italic">(2010 - 2016)</span> Alfa Net Plus - Soluciones informáticas -
+                            Desarrollador</span>
+                        <p>Me desempeñe en el desarrollo e implementación de software ERP, brindando capacitaciones
+                            y soporte. El mismo implementado principalmente en VB6, SQL.</p>
+
+                        <ul>
+                            <li>Python, PHP, SQL, VB6</li>
+                            <li>Análisis, desarrollo y mantenimiento ERP.</li>
+                            <li>Relevamientos</li>
+                            <li>Soporte técnico, capacitaciones</li>
+                        </ul>
+                    </section>
+                </article>
+
+                <article class="mb-5">
+                    <h2 class="title  my-3">- Educación</h2>
+
+                    <table class="table-education w-100">
+                        <thead>
+                            <tr>
+                                <th>Título</th>
+                                <th>Establecimiento</th>
+                                <th>Estado</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>Tecnicatura universitaria en tecnologías web</td>
+                                <td>Universidad Nacional del Oeste</td>
+                                <td><span class="italic">En curso</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>Data Analytics</td>
+                                <td>Coderhouse</td>
+                                <td><span class="italic">Finalizado</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>Desarrollo Full Stack con Python (Django) y JavaScript</td>
+                                <td>PoloTIC Misiones</td>
+                                <td><span class="italic">Finalizado</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </article>
+
+            </section>
+        </div>
+
+        <div class="mt-5 d-flex flex-column">
+            <h5 class="title my-3">Datos ingresados</h5>
+
+            <div class="mb-3">
+                <label for="selectOrder" class="form-label">Ordenar por:</label>
+                <select class="form-select" id="selectOrder">
+                    <option value="name">Nombre</option>
+                    <option value="email">Email</option>
+                    <option value="phone">Teléfono</option>
+                    <option value="amount">Sueldo</option>
+                </select>
             </div>
 
-
-            <article class="data">
-                <h3>Teléfono</h3>
-                <span>011 22342352</span>
-            </article>
-
-            <article class="data">
-                <h3>Mail</h3>
-                <span><a href="mailto:cristian.torres.9035@gmail.com">cristian.torres.9035@gmail.com</a></span>
-            </article>
-
-            <article class="data">
-                <h3>LinkedIn</h3>
-                <span><a target="_blank"
-                        href="https://www.linkedin.com/in/cristian-hernan-torres-84630b182/">Link</a></span>
-            </article>
-
-            <article>
-                <h3>Contáctame</h3>
-                <form action="" class="formMessage">
-                    <label for="name">Nombre:</label><br />
-                    <input type="text" name="name" id="name" required><br /><br />
-
-
-                    <label for="mail">Email:</label><br />
-                    <input type="email" name="mail" id="mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-                        required><br /><br />
-
-                    <label for="phone">Teléfono:</label><br />
-                    <input type="tel" name="phone" id="phone"><br /><br />
-
-                    <label for="message">Mensaje:</label><br />
-                    <textarea name="message" rows="5" id="message" required></textarea><br /><br />
-
-                    <input type="submit" value="Enviar mensaje">
-                </form>
-            </article>
-        </aside>
-
-        <section id="main-section">
-            <article>
-                <h2 class="title">- Sobre mí</h2>
-                <p>Soy una persona proactiva, con gran capacidad de trabajo en equipo, apasionado por
-                    la informática y por lo que hago. En constante aprendizaje, pendiente de las tendencias del
-                    ámbito. Me gustan los desafíos y afrontar problemas, buscando siempre la satisfacción del
-                    cliente. Busco aprender cada día para poder desarrollarme profesionalmente.
-                </p>
-
-            </article>
-
-            <article>
-                <h2 class="title">- Experiencia laboral</h2>
-
-                <section class="work-detail">
-                    <span><em>(2016 - actualidad)</em> Alfa Net Plus - Soluciones informáticas - Líder de
-                        proyecto</span>
-                    <p>Me desempeño desarrollando/dirigiendo nuevos proyectos para clientes en un sistema ERP
-                        con más de 20 años en el mercado. También me encargo de la implementación de nuevas
-                        tecnologías.</p>
-
-                    <ul>
-                        <li>Python, React, React Native, PHP, SQL</li>
-                        <li>Análisis, coordinación y desarrollo de aplicaciones web, API, PWA, aplicaciones móviles,
-                            etc.
-                        </li>
-                        <li>Coordinación, desarrollo de nuevos productos.</li>
-                    </ul>
-                </section>
-
-                <section class="work-detail">
-                    <span><em>(2010 - 2016)</em> Alfa Net Plus - Soluciones informáticas - Desarrollador</span>
-                    <p>Me desempeñe en el desarrollo e implementación de software ERP, brindando capacitaciones
-                        y soporte. El mismo implementado principalmente en VB6, SQL.</p>
-
-                    <ul>
-                        <li>Python, PHP, SQL, VB6</li>
-                        <li>Análisis, desarrollo y mantenimiento ERP.</li>
-                        <li>Relevamientos</li>
-                        <li>Soporte técnico, capacitaciones</li>
-                    </ul>
-                </section>
-            </article>
-
-            <article>
-                <h2 class="title">- Educación</h2>
-
-                <table class="table-education">
+            <div id="detailInputData">
+                <table class="table">
                     <thead>
                         <tr>
-                            <th>Título</th>
-                            <th>Establecimiento</th>
-                            <th>Estado</th>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Teléfono</th>
+                            <th scope="col">Sueldo minimo</th>
+                            <th scope="col">Sueldo U$D</th>
+                            <th scope="col">Sueldo EUR</th>
+                            <th scope="col">Mensaje</th>
                         </tr>
                     </thead>
+                    <tbody id="bodyTable">
 
-                    <tbody>
-                        <tr>
-                            <td>Tecnicatura universitaria en tecnologías web</td>
-                            <td>Universidad Nacional del Oeste</td>
-                            <td><em>En curso</em></td>
-                        </tr>
-
-                        <tr>
-                            <td>Data Analytics</td>
-                            <td>Coderhouse</td>
-                            <td><em>Finalizado</em></td>
-                        </tr>
-
-                        <tr>
-                            <td>Desarrollo Full Stack con Python (Django) y JavaScript</td>
-                            <td>PoloTIC Misiones</td>
-                            <td><em>Finalizado</em></td>
-                        </tr>
                     </tbody>
                 </table>
-            </article>
-        </section>
-
-
+            </div>
+        </div>
     </main>
+
+    <script src="./index.js"></script>
 </body>
 
 </html>

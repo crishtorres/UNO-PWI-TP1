@@ -7,49 +7,21 @@ body {
 }
 
 main {
-    max-width: 1000px;
-    margin: auto;
-    padding: 10px;
     border: 1px solid #e1e1e1;
-    min-height: 95vh;
-    height: 100%;
     background-color: #ffffff;
-    border-radius: 10px;
 }
 
 aside {
-    float: left;
-    width: 25%;
-    padding: 10px;
-    height: 100%;
-    border-radius: 10px;
+    flex-basis: 30%;
     background-color: rgb(154, 196, 221);
 }
 
-aside h1 {
-    margin-bottom: 0;
-}
-
-aside h2 {
-    margin-top: 40px;
-}
 
 aside img.profile {
     height: 150px;
     width: 150px;
-    border-radius: 60%;
     border: 5px solid #ffffff;
     object-fit: cover;
-    display: block;
-    margin: auto;
-}
-
-#main-title-container {
-    margin-bottom: 50px;
-}
-
-.data h3 {
-    margin: 10px 0 0 0;
 }
 
 .data span {
@@ -57,41 +29,22 @@ aside img.profile {
 }
 
 #main-section {
-    float: right;
-    width: 70%;
-    margin-top: 10px;
+    flex-basis: 60%;
 }
 
-#main-section article {
-    margin-bottom: 40px;
-}
 
 .formMessage {
     background-color: #e1e1e1;
-    border-radius: 10px;
-    padding: 20px;
 }
 
-.formMessage input,
-.formMessage textarea {
-    border-radius: 10px;
-    border: 0;
-    padding: 5px;
-    width: 95%;
-}
 
-h2.title {
-    margin: 20px 0;
+h2.title,
+h5.title {
     color: #3882af
 }
 
 .formMessage input[type="submit"] {
-    padding: 10px;
-    font-weight: bold;
-    width: 100%;
     background-color: rgb(81, 85, 85);
-    color: #ffffff;
-    cursor: pointer;
 }
 
 .formMessage input[type="submit"]:hover {
@@ -117,4 +70,12 @@ h2.title {
 
 .work-detail {
     margin-bottom: 40px;
+}
+
+.italic {
+    font-style: italic;
+}
+
+#quotationContainer {
+    background-color: #0095ff
 }
