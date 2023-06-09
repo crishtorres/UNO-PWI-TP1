@@ -102,23 +102,27 @@ const clearInputData = () => {
 
 const renderData = () => {
     const $bodyTable = document.querySelector("#bodyTable")
-    let rowsTable = "";
+    $bodyTable.innerHTML = ''
 
     inputData.map((data) => {
-        rowsTable += `
-        <tr>
-            <td>${data.name}</td>
-            <td>${data.email}</td>
-            <td>${data.phone}</td>
-            <td>${data.amount}</td>
-            <td>${(data.amount / quotation.USD).toFixed(3)}</td>
-            <td>${(data.amount / quotation.EUR).toFixed(3)}</td>
-            <td>${data.message}</td>
-        </tr>
-        `
-    })
 
-    $bodyTable.innerHTML = rowsTable
+        const tr = document.createElement("tr")
+
+        tr.appendChild(createTd(data.name))
+        tr.appendChild(createTd(data.email))
+        tr.appendChild(createTd(data.phone))
+        tr.appendChild(createTd(data.amount))
+        tr.appendChild(createTd((data.amount / quotation.USD).toFixed(3)))
+        tr.appendChild(createTd((data.amount / quotation.EUR).toFixed(3)))
+        tr.appendChild(createTd(data.message))
+        $bodyTable.appendChild(tr)
+    })
+}
+
+const createTd = (text) => {
+    const td = document.createElement("td")
+    td.innerText = text
+    return td
 }
 
 const orderArray = (key) => {
